@@ -11,7 +11,7 @@ REGOLE
     Dato il seguente array, scrivi del codice per stampare ogni elemento dell'array in console.
 */
 const pets = ["dog", "cat", "hamster", "redfish"]
-for (i = 0; i < pets.length; i++) {
+for (let i = 0; i < pets.length; i++) {
   console.log("EXERCISE 1:", pets[i]) //verified
 }
 
@@ -108,12 +108,20 @@ for (let i = 0; i < cars.length; i++) {
   let toSave = cars[i].trims[0]
   justTrims.push(toSave)
 }
-console.log(justTrims)//verified
+console.log("EXERCISE 7:",justTrims) //verified
 
 /* ESERCIZIO 8
     Cicla l'array "cars" e costruisci un if/else statament per mostrare due diversi messaggi in console. Se la prima lettera della proprietà
     "color" ha valore "b", mostra in console "Fizz". Altrimenti, mostra in console "Buzz".
 */
+for (let i = 0; i < cars.length; i++) {
+  if (cars[i].color[0] === "b") {
+    console.log("EXERCISE 8:","Fizz")
+  } else {
+    console.log("EXERCISE 8:","Buzz")
+  }
+}
+// Found .charAt(0) and .startsWith() but I prefer it this way.
 
 /* ESERCIZIO 9
     Utilizza un ciclo while per stampare in console i valori del seguente array numerico fino al raggiungimento del numero 32.
@@ -122,9 +130,36 @@ const numericArray = [
   6, 90, 45, 75, 84, 98, 35, 74, 31, 2, 8, 23, 100, 32, 66, 313, 321, 105,
 ]
 
+let i =0
+
+while(numericArray[i] !==32 ){
+    console.log("EXERCISE 9:",numericArray[i])//verified
+    i++
+}
+
 /* ESERCIZIO 10
     Partendo dall'array fornito e utilizzando un costrutto switch, genera un nuovo array composto dalle posizioni di ogni carattere all'interno
     dell'alfabeto italiano.
     es. [f, b, e] --> [6, 2, 5]
 */
 const charactersArray = ["g", "n", "u", "z", "d"]
+
+const alphabeticOrder = []
+for(let i=0;i<charactersArray.length;i++){
+switch(charactersArray[i]){
+    case'g': alphabeticOrder.push(7)
+    break
+    case'n': alphabeticOrder.push(12)
+    break
+    case'u': alphabeticOrder.push(19)
+    break
+    case'z': alphabeticOrder.push(21)
+    break
+    case'd': alphabeticOrder.push(4)
+    break
+}
+
+}
+console.log("EXERCISE 10:",alphabeticOrder)//verified
+
+//I used the italian alphabetic order
