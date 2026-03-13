@@ -86,10 +86,11 @@ console.log("EXERCISE 5:", cars) //verified
 let newObj = {
   brand: "Tata",
   model: "Altroz",
-  color: "white",
-  trims: ["XE", "XM", "XZ", "XZ+"],
+  color: "grey",
+  trims: ["Smart", "Pure", "Creative", "Accomplished S"],
   licensePlate: "DL 01 AB 1234",
 }
+//My aunt's car XD
 
 cars.push(newObj)
 console.log("EXERCISE 6a:", cars) //verified
@@ -108,7 +109,7 @@ for (let i = 0; i < cars.length; i++) {
   let toSave = cars[i].trims[0]
   justTrims.push(toSave)
 }
-console.log("EXERCISE 7:",justTrims) //verified
+console.log("EXERCISE 7:", justTrims) //verified
 
 /* ESERCIZIO 8
     Cicla l'array "cars" e costruisci un if/else statament per mostrare due diversi messaggi in console. Se la prima lettera della proprietà
@@ -116,9 +117,9 @@ console.log("EXERCISE 7:",justTrims) //verified
 */
 for (let i = 0; i < cars.length; i++) {
   if (cars[i].color[0] === "b") {
-    console.log("EXERCISE 8:","Fizz")
+    console.log("EXERCISE 8:", "Fizz")
   } else {
-    console.log("EXERCISE 8:","Buzz")
+    console.log("EXERCISE 8:", "Buzz")
   }
 }
 // Found .charAt(0) and .startsWith() but I prefer it this way.
@@ -130,11 +131,11 @@ const numericArray = [
   6, 90, 45, 75, 84, 98, 35, 74, 31, 2, 8, 23, 100, 32, 66, 313, 321, 105,
 ]
 
-let i =0
+let i = 0
 
-while(numericArray[i] !==32 ){
-    console.log("EXERCISE 9:",numericArray[i])//verified
-    i++
+while (numericArray[i] !== 32) {
+  console.log("EXERCISE 9:", numericArray[i]) //verified
+  i++
 }
 
 /* ESERCIZIO 10
@@ -145,21 +146,27 @@ while(numericArray[i] !==32 ){
 const charactersArray = ["g", "n", "u", "z", "d"]
 
 const alphabeticOrder = []
-for(let i=0;i<charactersArray.length;i++){
-switch(charactersArray[i]){
-    case'g': alphabeticOrder.push(7)
-    break
-    case'n': alphabeticOrder.push(12)
-    break
-    case'u': alphabeticOrder.push(19)
-    break
-    case'z': alphabeticOrder.push(21)
-    break
-    case'd': alphabeticOrder.push(4)
-    break
+for (let i = 0; i < charactersArray.length; i++) {
+  switch (charactersArray[i]) {
+    case "g":
+      alphabeticOrder.push(7)
+      break
+    case "n":
+      alphabeticOrder.push(12)
+      break
+    case "u":
+      alphabeticOrder.push(19)
+      break
+    case "z":
+      alphabeticOrder.push(21)
+      break
+    case "d":
+      alphabeticOrder.push(4)
+      break
+  }
 }
-
-}
-console.log("EXERCISE 10:",alphabeticOrder)//verified
+console.log("EXERCISE 10:", alphabeticOrder) //verified
 
 //I used the italian alphabetic order
+
+//Niente funzioni?
